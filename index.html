@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyên đề Địa lý 12 - Đồng Bằng Sông Cửu Long</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        .heading-font { font-family: 'Playfair Display', serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), 
+                        url('https://images.pexels.com/photos/1010519/pexels-photo-1010519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #059669, #0284c7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .custom-shape-divider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        .card-zoom:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass shadow-sm px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="bg-emerald-600 p-2 rounded-lg text-white">
+                <i class="fas fa-map"></i>
+            </div>
+            <span class="font-bold text-xl text-emerald-800 tracking-tight">ĐỊA LÝ 12</span>
+        </div>
+        <div class="hidden md:flex gap-8 font-semibold text-gray-600">
+            <a href="#tong-quan" class="hover:text-emerald-600 transition">Tổng quan</a>
+            <a href="#tu-nhien" class="hover:text-emerald-600 transition">Tự nhiên</a>
+            <a href="#kinh-te" class="hover:text-emerald-600 transition">Kinh tế</a>
+            <a href="#thach-thuc" class="hover:text-emerald-600 transition">Thách thức</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center hero-bg text-white">
+        <div class="z-10 px-4" data-aos="zoom-in">
+            <h4 class="text-emerald-400 font-bold tracking-[0.3em] mb-4 uppercase">Chuyên đề Phát triển vùng</h4>
+            <h1 class="heading-font text-5xl md:text-8xl mb-6">Đồng Bằng Sông Cửu Long</h1>
+            <p class="max-w-2xl mx-auto text-lg md:text-xl font-light opacity-90">
+                Khám phá tiềm năng bền vững và giải pháp thích ứng của vùng đất "Chín Rồng" - Trung tâm nông nghiệp hàng đầu Việt Nam.
+            </p>
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="#tong-quan" class="bg-emerald-600 hover:bg-emerald-700 px-8 py-4 rounded-full font-bold shadow-lg transition-all">Bắt đầu học ngay</a>
+                <a href="#kinh-te" class="bg-white/20 hover:bg-white/30 backdrop-blur px-8 py-4 rounded-full font-bold transition-all border border-white/50">Ngành kinh tế chủ lực</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview & Admin Model -->
+    <section id="tong-quan" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4 heading-font italic">Vị trí & Cơ cấu Hành chính mới</h2>
+            <div class="h-1.5 w-24 bg-emerald-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+            <div class="space-y-8" data-aos="fade-right">
+                <div class="bg-white p-6 rounded-2xl shadow-xl border-l-8 border-emerald-500">
+                    <h3 class="text-xl font-bold text-emerald-700 mb-3"><i class="fas fa-compass mr-2"></i>Vị trí Chiến lược</h3>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        Là vùng cực Nam của Việt Nam, tiếp giáp Campuchia và hai mặt giáp biển (Biển Đông và Vịnh Thái Lan). Đây là cửa ngõ quan trọng ra thế giới của khu vực sông Mekong, thuận lợi giao thương quốc tế và kinh tế biển.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-sky-50 p-4 rounded-xl border border-sky-100">
+                        <h4 class="font-bold text-sky-800 mb-2">TP. Cần Thơ (Mới)</h4>
+                        <p class="text-xs text-sky-600">Sáp nhập: Cần Thơ, Sóc Trăng, Hậu Giang</p>
+                    </div>
+                    <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100">
+                        <h4 class="font-bold text-emerald-800 mb-2">Tỉnh Vĩnh Long (Mới)</h4>
+                        <p class="text-xs text-emerald-600">Sáp nhập: Vĩnh Long, Bến Tre, Trà Vinh</p>
+                    </div>
+                    <div class="bg-amber-50 p-4 rounded-xl border border-amber-100">
+                        <h4 class="font-bold text-amber-800 mb-2">Tỉnh Đồng Tháp (Mới)</h4>
+                        <p class="text-xs text-amber-600">Sáp nhập: Tiền Giang, Đồng Tháp</p>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-xl border border-red-100">
+                        <h4 class="font-bold text-red-800 mb-2">Tỉnh Cà Mau (Mới)</h4>
+                        <p class="text-xs text-red-600">Sáp nhập: Bạc Liêu, Cà Mau</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl" data-aos="fade-left">
+                <img src="https://images.pexels.com/photos/5923363/pexels-photo-5923363.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover" alt="Mekong Map Placeholder">
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
+                    <p class="font-bold">Lưu ý:</p>
+                    <p class="text-sm opacity-80 italic">Tỉnh Long An chuyển về vùng Đông Nam Bộ theo mô hình quy hoạch mới.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nature Section -->
+    <section id="tu-nhien" class="py-20 bg-emerald-900 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl font-bold heading-font">Đặc điểm Tự nhiên</h2>
+                    <p class="text-emerald-300 mt-2">Nền tảng phát triển nông nghiệp bền vững</p>
+                </div>
+                <i class="fas fa-leaf text-8xl text-emerald-800 opacity-50 absolute right-10 top-20"></i>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Phù sa -->
+                <div class="bg-white/10 p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all" data-aos="flip-up">
+                    <div class="bg-emerald-500 w-14 h-14 flex items-center justify-center rounded-2xl mb-6 shadow-lg">
+                        <i class="fas fa-seedling text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Phù sa màu mỡ</h3>
+                    <p class="text-emerald-50 opacity-80 text-sm leading-relaxed">
+                        Cung cấp dinh dưỡng cao, giảm chi phí phân bón. Là cơ sở hình thành vùng chuyên canh lúa 3 vụ và vườn cây đặc sản (Sầu riêng, Xoài...).
+                    </p>
+                </div>
+
+                <!-- Kênh rạch -->
+                <div class="bg-white/10 p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all" data-aos="flip-up" data-aos-delay="100">
+                    <div class="bg-sky-500 w-14 h-14 flex items-center justify-center rounded-2xl mb-6 shadow-lg">
+                        <i class="fas fa-water text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Mạng lưới kênh rạch</h3>
+                    <p class="text-emerald-50 opacity-80 text-sm leading-relaxed">
+                        Đảm bảo tưới tiêu quanh năm, thau chua rửa mặn. Môi trường lý tưởng nuôi cá tra, cá basa phục vụ xuất khẩu tỉ USD.
+                    </p>
+                </div>
+
+                <!-- Bờ biển -->
+                <div class="bg-white/10 p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all" data-aos="flip-up" data-aos-delay="200">
+                    <div class="bg-amber-500 w-14 h-14 flex items-center justify-center rounded-2xl mb-6 shadow-lg">
+                        <i class="fas fa-ship text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Địa hình & Bờ biển</h3>
+                    <p class="text-emerald-50 opacity-80 text-sm leading-relaxed">
+                        Đường bờ biển dài, cửa sông lớn tạo vùng nước lợ/mặn dồi dào thức ăn tự nhiên. Phù hợp nuôi tôm thẻ, tôm sú xuất khẩu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Economy Section -->
+    <section id="kinh-te" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-gray-800 heading-font italic">Ngành Kinh tế Mũi nhọn</h2>
+            <p class="text-emerald-600 font-semibold tracking-widest mt-2 uppercase text-sm">Trụ cột an ninh lương thực</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Rice -->
+            <div class="group card-zoom bg-white rounded-3xl shadow-xl overflow-hidden transition-all" data-aos="fade-up">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.pexels.com/photos/2589457/pexels-photo-2589457.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover transition-all duration-500" alt="Rice">
+                    <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-xs font-bold text-emerald-700">90% Xuất khẩu</div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3 group-hover:text-emerald-600 transition">Nông nghiệp (Lúa gạo)</h3>
+                    <p class="text-gray-500 text-sm mb-4">Chiếm 50% sản lượng cả nước. Đặc sản gạo ST25 - Gạo ngon nhất thế giới.</p>
+                </div>
+            </div>
+
+            <!-- Seafood -->
+            <div class="group card-zoom bg-white rounded-3xl shadow-xl overflow-hidden transition-all" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.pexels.com/photos/3313028/pexels-photo-3313028.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover transition-all duration-500" alt="Seafood">
+                    <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-xs font-bold text-sky-700">60% Sản lượng</div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3 group-hover:text-sky-600 transition">Thủy sản Xuất khẩu</h3>
+                    <p class="text-gray-500 text-sm mb-4">Tôm nước lợ tại Cà Mau, Bạc Liêu; Cá Tra tại An Giang, Đồng Tháp chiếm vị thế số 1.</p>
+                </div>
+            </div>
+
+            <!-- Tourism -->
+            <div class="group card-zoom bg-white rounded-3xl shadow-xl overflow-hidden transition-all" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.pexels.com/photos/2899026/pexels-photo-2899026.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover transition-all duration-500" alt="Tourism">
+                    <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-xs font-bold text-amber-700">Văn hóa sông nước</div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3 group-hover:text-amber-600 transition">Du lịch & Dịch vụ</h3>
+                    <p class="text-gray-500 text-sm mb-4">Chợ nổi Cái Răng, Rừng tràm Trà Sư... mang đậm bản sắc vùng miền.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges & Solutions -->
+    <section id="thach-thuc" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold heading-font italic">Thách thức & Giải pháp</h2>
+                <p class="text-red-400 mt-2 font-semibold">Tầm nhìn bền vững đến năm 2050</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="space-y-8" data-aos="fade-right">
+                    <div class="flex gap-6">
+                        <div class="text-4xl text-red-500 shrink-0"><i class="fas fa-biohazard"></i></div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Thách thức: Biến đổi khí hậu</h4>
+                            <p class="text-gray-400 text-sm italic">Nước biển dâng, xâm nhập mặn đe dọa trực tiếp diện tích trồng lúa và hạ tầng.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="text-4xl text-sky-400 shrink-0"><i class="fas fa-hand-holding-water"></i></div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Giải pháp: Chuyển đổi "Thuận thiên"</h4>
+                            <p class="text-gray-400 text-sm italic">Thay đổi tư duy từ "Chống mặn" sang "Sống chung với mặn", tận dụng nước lợ để phát triển kinh tế.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-emerald-800/20 p-8 rounded-3xl border border-emerald-500/30 shadow-2xl" data-aos="fade-left">
+                    <h4 class="text-2xl font-bold mb-6 text-emerald-400 flex items-center">
+                        <i class="fas fa-lightbulb mr-3"></i>Mô hình thích ứng thông minh
+                    </h4>
+                    <div class="bg-white/5 p-4 rounded-2xl mb-4">
+                        <p class="font-bold text-lg mb-1">Mô hình Lúa - Tôm</p>
+                        <p class="text-sm text-gray-400 italic">Mùa mưa trồng lúa khi nước ngọt, mùa khô nuôi tôm khi nước lợ. Tăng thu nhập gấp 3-4 lần trồng lúa đơn thuần.</p>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-2xl">
+                        <p class="font-bold text-lg mb-1">Công nghiệp chế biến sâu</p>
+                        <p class="text-sm text-gray-400 italic">Xay xát, đông lạnh, đóng hộp giúp tăng giá trị nông sản vùng ĐBSCL trên thị trường quốc tế.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 py-12 border-t border-gray-200 text-center">
+        <p class="font-bold text-emerald-800 tracking-widest uppercase mb-4">Địa lý Việt Nam - Đồng Bằng Sông Cửu Long</p>
+        <div class="flex justify-center gap-6 text-gray-400 text-xl mb-6">
+            <i class="fab fa-facebook hover:text-emerald-600 cursor-pointer"></i>
+            <i class="fab fa-youtube hover:text-red-600 cursor-pointer"></i>
+            <i class="fas fa-graduation-cap hover:text-blue-600 cursor-pointer"></i>
+        </div>
+        <p class="text-xs text-gray-500">&copy; 2024 - Tài liệu giảng dạy chuyên đề Địa lý 12</p>
+    </footer>
+
+    <!-- AOS Animation Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
